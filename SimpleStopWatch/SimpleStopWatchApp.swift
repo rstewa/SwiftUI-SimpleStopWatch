@@ -12,6 +12,8 @@ struct SimpleStopWatchApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .frame(minWidth: 200, minHeight: 100)
         }
+        .windowResizability(.contentSize)
     }
 }
